@@ -26,6 +26,28 @@
             }
         }
     }
+    .resume{
+        &__wrapper{
+            padding: 57px 15px 0 15px;
+            grid-template-columns: repeat(2,415px);
+            column-gap: 100px;
+        }
+    }
+    .skills{
+        &__wrapper{
+            grid-template-columns: repeat(4,231px);
+            grid-template-rows: repeat(2, minmax(275px, auto));
+            grid-auto-rows: 275px;
+        }
+        &__ratings{
+            margin-top: 70px;
+            grid-template-columns: repeat(3,295px);
+            column-gap:35px;
+            &-line{
+                width: 295px;
+            }
+        }
+    }
 }
 
 @media(max-width:992px) {
@@ -51,6 +73,24 @@
                 column-gap: 20px;
                 grid-template-columns: 40px 320px;
             }
+        }
+    }
+    .resume{
+        padding-top: 60px;
+        &__wrapper{
+            grid-template-columns: repeat(2,315px);
+            column-gap: 60px;
+        }
+        
+    }
+    .skills{
+        padding-top: 60px;
+        &__wrapper{
+            grid-template-columns: repeat(3,231px)
+        }
+        &__ratings{
+            grid-template-columns: repeat(2,295px);
+            justify-content: space-between;
         }
     }
 }
@@ -87,6 +127,35 @@
             }
         }
     }
+    .resume{
+        padding-top: 60px;
+        &__wrapper{
+            display: block;
+        }
+        &__column{
+            ul{
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .skills{
+        &__wrapper{
+            grid-template-columns: repeat(2,261px);
+            justify-content: center;
+            column-gap:15px;
+        }
+        &__ratings{
+            grid-template-columns: repeat(2,250px);
+            &_item{
+                justify-content: space-around;
+            }
+            &-line{
+                width: 250px;
+            }
+            
+        }
+    }
+   
 }
 
 @media(max-width:576px) {
@@ -125,5 +194,36 @@
         &__scills{
             grid-template-columns: 1fr;
         }
+        
     }
+    .resume{
+        padding-top: 30px;
+        &__wrapper{
+            padding-top: 40px;
+        }
+
+    }
+    
+    .title__section__subtitle{
+            line-height: 40px;
+    }
+    .skills{
+        padding-top: 38px;
+        &__wrapper{
+            display: block;
+            margin-top: 35px;
+            
+        }
+        &__item{
+            margin-bottom: 12px;
+        }
+        &__ratings{
+            margin-top: 50px;
+             grid-template-columns: 1fr
+        }
+    }
+    .title__section__subtitle{
+        line-height: 35px;
+}
+    
 }
